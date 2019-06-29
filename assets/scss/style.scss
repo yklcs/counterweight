@@ -1,0 +1,44 @@
+@import "fonts";
+@import "colors";
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Serif|Nanum+Myeongjo&display=swap");
+
+body {
+  font-family: "IBM Plex Serif", "Nanum Myeongjo", serif;
+  font-size: 1.1em;
+  background-color: $background-color;
+}
+
+.post-content {
+  color: $text-color;
+  letter-spacing: 0.015em;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.site-wrapper {
+  max-width: 700px;
+  margin: auto;
+}
+
+.post-card-link {
+  text-decoration: none;
+  color: $text-color;
+}
+
+.post-card-link:hover {
+  text-decoration: underline;
+}
+
+.post-card {
+  margin: 0 1em;
+}

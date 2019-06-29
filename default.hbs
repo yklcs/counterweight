@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{@site.lang}}">
+
+<head>
+  {{!-- Meta tags --}}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="HandheldFriendly" content="True" />
+
+  <link rel="stylesheet" type="text/css" href="{{asset "built/css/style.css"}}" />
+
+  <title>{{meta_title}}</title>
+
+  {{ghost_head}}
+</head>
+
+<body class="{{body_class}}">
+  <div class="site-wrapper">
+      {{{body}}}
+  </div>
+  {{ghost_foot}}
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "counterweight",
+  "version": "0.1.0",
+  "description": "a minimal theme for ghost",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass assets/scss/style.scss:assets/built/css/style.css --style=compressed && cp *.hbs dist/build && cp -r assets dist/build && cp package.json dist/build && cp -r partials dist/build && cd dist/build && bestzip ../counterweight.zip * && rm -rf *"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RocketLL/counterweight.git"
+  },
+  "author": {
+    "name": "Lucas Lee",
+    "email": "luc4sl33@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RocketLL/counterweight/issues"
+  },
+  "homepage": "https://github.com/RocketLL/counterweight#readme",
+  "devDependencies": {
+    "bestzip": "^2.1.4",
+    "install": "^0.12.2",
+    "node-minify": "^3.6.0",
+    "npm": "^6.9.0",
+    "sass": "^1.22.0"
+  }
+}
