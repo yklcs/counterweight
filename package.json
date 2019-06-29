@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "sass assets/scss/style.scss:assets/built/css/style.css --style=compressed && cp *.hbs dist/build && cp -r assets dist/build && cp package.json dist/build && cp -r partials dist/build && cd dist/build && bestzip ../counterweight.zip * && rm -rf *"
+    "build": "sass assets/scss/style.scss:assets/built/css/style.css --style=compressed && cp *.hbs dist/build && cp -r assets dist/build && cp package.json dist/build && cp -r partials dist/build && cp node_modules/katex/dist/katex.min.js assets/built/js && cp node_modules/katex/dist/contrib/*.min.js assets/built/js && cp -r node_modules/katex/dist/fonts/* assets/fonts/katex && cd dist/build && bestzip ../counterweight.zip * && rm -rf * && cd ../.."
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,8 @@
     "node-minify": "^3.6.0",
     "npm": "^6.9.0",
     "sass": "^1.22.0"
+  },
+  "dependencies": {
+    "katex": "^0.10.2"
   }
 }
