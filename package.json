@@ -24,7 +24,7 @@
     "bestzip": "^2.1.4",
     "install": "^0.12.2",
     "node-minify": "^3.6.0",
-    "npm": "^6.9.0",
+    "npm": "^6.13.4",
     "sass": "^1.22.0"
   },
   "dependencies": {
