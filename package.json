@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/RocketLL/counterweight#readme",
   "devDependencies": {
-    "bestzip": "^2.1.4",
+    "bestzip": "^2.1.7",
     "install": "^0.12.2",
     "node-minify": "^3.6.0",
     "npm": "^6.9.0",
